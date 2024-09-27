@@ -1,0 +1,64 @@
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg p-8 max-w-md mx-auto shadow-lg;
+}
+
+.modal-header {
+  @apply text-2xl mb-4;
+}
+
+.modal-input {
+  @apply border border-gray-300 rounded-lg p-2 mb-1 w-full;
+}
+
+.modal-input-error {
+  @apply border-red-500;
+}
+
+.modal-error-message {
+  @apply text-red-500 text-sm;
+}
+
+.modal-buttons {
+  @apply flex justify-end;
+}
+
+.modal-button-cancel {
+  @apply bg-gray-300 text-black rounded-lg px-4 py-2 mr-2;
+}
+
+.modal-button-submit {
+  @apply bg-blue-500 text-white rounded-lg px-4 py-2;
+}
+
+.add-button {
+  @apply bg-blue-500 text-white rounded-full p-4 fixed bottom-10 right-10 shadow-lg hover:bg-blue-600 transform hover:scale-110 transition duration-300;
+}
+
+.emoji-button {
+  @apply bg-blue-500 text-white rounded-full w-24 h-24 flex items-center justify-center relative mx-auto;
+}
+
+.emoji-placeholder {
+  @apply text-gray-400 text-6xl;
+}
+
+.emoji-picker {
+  @apply absolute z-50 mt-2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.emoji-icon-overlay {
+  @apply absolute bottom-0 right-0 bg-white rounded-full p-1;
+  transform: translate(25%, 25%);
+  border: 2px solid white;
+}
+
+.emoji-icon-overlay svg {
+  @apply text-blue-500 w-6 h-6;
+}
